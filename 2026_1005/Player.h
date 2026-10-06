@@ -5,10 +5,9 @@ class Player : public GameCharacters
 public:
 	Player();
 
-private:
+	//プレイヤーの行動選択
+	void Action(GameCharacters& targer);
 
-	int input;
 
-	void Input();
 };
 

@@ -5,7 +5,14 @@
 
 class Game
 {
+private:
+	GameCharacters gameCharacters;
+	Player player;
+	CPU cpu;
+
 public:
+
+	Game();
 	void Run();
 
 };
