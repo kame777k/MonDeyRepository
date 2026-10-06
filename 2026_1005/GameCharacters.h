@@ -8,8 +8,6 @@ protected:
 	int defense;
 	int evasionAbility;
 	
-	void Init();
-	void SetAbilityValus(int& attackPower, int& defense, int& evasionAbility);
 public:
 	GameCharacters();
 

@@ -7,3 +7,10 @@
 using namespace std;
 
 CPU::CPU() :GameCharacters() {};
+
+void CPU::Action(GameCharacters& target)
+{
+	cout << "\n「CPUのターン」\n";
+
+	Attack(target);
+}
