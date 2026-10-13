@@ -7,16 +7,14 @@ using namespace std;
 
 int main(void)
 {
-	string playerName;
-	cout << "プレイヤーの名前を入力してください\n";
-	cin >> playerName;
+	Player player("オレンジ");
+	Enemy enemy("スイカ");
+	Boss boss("ブドウ");
+	BattleManager battleMane;
 
-	Player player(playerName);
-	Enemy enemy("犬");
-	Boss boss("???????");
-	BattleManager batteleManager;
-
-	batteleManager.SrartBattle(&player,&enemy,&boss);
+	battleMane.SrartBattle(&player);
+	battleMane.SrartBattle(&enemy);
+	battleMane.SrartBattle(&boss);
 
 	return 0;
 }

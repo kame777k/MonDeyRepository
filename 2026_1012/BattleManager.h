@@ -3,6 +3,6 @@
 class BattleManager
 {
 public:
-	void SrartBattle(Characters* player, Characters* enemy, Characters* boss);
+	void SrartBattle(Characters* chareter);
 };
 

@@ -2,16 +2,9 @@
 #include<iostream>
 	
 
-void BattleManager::SrartBattle(Characters* player, Characters* enemy, Characters* boss)
+void BattleManager::SrartBattle(Characters* character)
 {
-	cout << player->GetName() << endl;
-	player->Attack();
-
-	cout << enemy->GetName() << endl;
-	enemy->Attack();
-
-	cout << boss->GetName() << endl;
-	boss->Attack();
-
+	cout << character->GetName() << endl;
+	character->Attack();
 }
 
