@@ -124,13 +124,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Archer.h" />
+    <ClInclude Include="Homura.h" />
+    <ClInclude Include="Madoka.h" />
+    <ClInclude Include="MagicalGirl.h" />
     <ClInclude Include="Rider.h" />
     <ClInclude Include="Saber.h" />
     <ClInclude Include="Servant.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Archer.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Homura.cpp" />
+    <ClCompile Include="Madoka.cpp" />
+    <ClCompile Include="MagicalGirl.cpp" />
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="main2.cpp" />
     <ClCompile Include="Rider.cpp" />
     <ClCompile Include="Saber.cpp" />
     <ClCompile Include="Servant.cpp" />
