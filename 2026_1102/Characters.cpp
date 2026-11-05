@@ -1,35 +1,22 @@
 #include "Characters.h"
 #include<iostream>
-#include"Config.h"
+#include<string>
 using namespace std;
 
-Characters::Characters(int initialHp) :hp(initialHp) {};
+Characters::Characters(int initialHp, string name) :hp(initialHp), name(name) {};
 
-void Characters::ShowStatus(const string& name)const
+void Characters::ShowStatus()const
 {
-	cout << name << "HP:" << hp << endl;
+	cout << "NAME:" << name << "\nHP:" << hp << endl;
 }
 
-void Characters::takeDamage(int damage)
+void Characters::TakeDamge(int damage)
 {
 	hp -= damage;
-
-	if (hp < 0)
-	{
-		hp = 0;
-	}
 }
 
-int Characters::GetHp()const
+
+int  Characters::GetHp()const
 {
 	return hp;
-}
-
-void Characters::RecoverHp(int amount)
-{
-	hp += amount;
-	if (hp > Config::MAX_HP)
-	{
-		hp = Config::MAX_HP;
-	}
 }

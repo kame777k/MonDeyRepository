@@ -3,17 +3,16 @@
 class Characters
 {
 private:
+	std::string name;
 	int hp;
-
-protected:
-	void RecoverHp(int amount);
-
+	
 public:
-	Characters(int initialHp);
 
-	void ShowStatus(const std::string& name)const;
-
-	void takeDamage(int damage);
-
+	Characters(int initialHp, std::string name);
+	~Characters() = default;
+	void ShowStatus()const;
+	virtual void DrawAction()const = 0;
+	void TakeDamge(int damage);
 	int GetHp()const;
 };
+
